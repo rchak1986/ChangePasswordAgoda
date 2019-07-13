@@ -1,36 +1,96 @@
 package changePasswordCore;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ChangePassword {
-	public static boolean changePassword(String oldPassword, String newPassword){
-		boolean flag=false;
-		double oldLength = oldPassword.length(); 
-		double similarityFactor = 0.8;
-		if (checkPasswordRule(newPassword)) flag=true;
-		if (checkSimilarityFactor(oldPassword,newPassword)/oldLength>similarityFactor){
-			flag=true;
-		}else{
-			System.out.println("Similarity factor between old and new password is more than 80%");
-			flag=false;
-		}
+	private String filePath = System. getProperty("user.dir")+"/src/main/resources/tempPass.properties";
+	private String defaultOldPassword = "Abcd@123";
+	private String passwordKey="system.password";
+	private double similarityFactor = 0.8;
+	private String specialCharRange = "!@#$&*";
+	private double maxNumbersFactor=2;
+	private int maxSpecialCharAllowed = 4;
+	private int minLetterAndDigitCount = 1; //minimum 1 lower, 1 upper, 1 special and 1 digit
+	private int maxDuplicateChar=4;
+	private int minPasswordLength=18;
+	
+	public void setOldPassword(String oldPassword){
+		File f = new File(filePath);
+		if (f.exists())f.delete();
 		
+		try {
+			if (!f.getParentFile().exists())f.getParentFile().mkdirs();
+			f.createNewFile();
+			OutputStream output = new FileOutputStream(filePath);
+			Properties prop = new Properties();
+
+	        prop.setProperty(passwordKey, oldPassword);
+	        prop.store(output,null);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public boolean verifyOldPassword(String oldPassword){
+		boolean flag=false;
+		File f = new File(filePath);
+		if (!f.exists())setOldPassword(defaultOldPassword);
+		try (InputStream input = new FileInputStream(filePath)) {
+            Properties prop = new Properties();
+            prop.load(input);
+
+            if (prop.getProperty(passwordKey).equals(oldPassword)){
+            	System.out.println("Old Password Successfully verified.");
+            	flag=true;
+            }else{
+            	System.out.println("Old Password does not match.");
+            }
+
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }       
+
+		return flag;
+	}
+	
+	public boolean changePassword(String oldPassword, String newPassword){
+		boolean flag=false;
+		double oldLength = oldPassword.length();
+		if (verifyOldPassword(oldPassword)){
+			if (checkPasswordRule(newPassword)){
+				double actualSimilarityFactor = checkSimilarityFactor(oldPassword,newPassword)/oldLength;
+				if (actualSimilarityFactor<similarityFactor){
+					System.out.println("Password changed successfully.");
+					flag=true;
+				}else{
+					System.out.println("Similarity factor between old and new password is more than " + similarityFactor);
+				}
+			}
+		}
+				
 		return flag;
 	}
 
-	public static boolean checkPasswordRule(String password) 
+	private boolean checkPasswordRule(String password) 
 	{
 		int newPasswordLength = password.length();
 		boolean flag=false;
-	    if(newPasswordLength>=18)
+	    if(newPasswordLength>=minPasswordLength)
 	    {
 			Pattern lcaseLetters = Pattern.compile("[a-z]");
 			Pattern ucaseLetters = Pattern.compile("[A-Z]");
 			Pattern digit = Pattern.compile("[0-9]");
-			Pattern specialChar = Pattern.compile ("[!@#$&*]");
+			Pattern specialChar = Pattern.compile ("["+specialCharRange+"]");
 
 			Matcher hasLCaseLetter = lcaseLetters.matcher(password);
 			Matcher hasUCaseLetter = ucaseLetters.matcher(password);
@@ -45,30 +105,36 @@ public class ChangePassword {
 			while (hasUCaseLetter.find()){uCaseCount++;}
 			while (hasDigit.find()){digitCount++;}
 			while (hasSpecialChar.find()){specialCharCount++;}
-			double divident = 2;
-			if (lCaseCount>=1 && uCaseCount>=1 && digitCount>=1 && specialCharCount>=1 && specialCharCount<=4){
-				if (digitCount<newPasswordLength/divident){
+			
+			if (lCaseCount>=minLetterAndDigitCount 
+					&& uCaseCount>=minLetterAndDigitCount 
+					&& digitCount>=minLetterAndDigitCount 
+					&& specialCharCount>=minLetterAndDigitCount 
+					&& specialCharCount<=maxSpecialCharAllowed){
+				if (digitCount<newPasswordLength/maxNumbersFactor){
 					if (!checkDuplicateCharacterRule(password)){
-						System.out.println("Password changed successfully.");
 					   flag=true;
 					}else{
-						System.out.println("Password should not contain duplicate repeat characters more than 4");
+						System.out.println("Password should not contain duplicate repeat characters more than " + maxDuplicateChar);
 					}
 				}else{
 					System.out.println("50 % of the Password should not be a number.");
 				}
 			}else{
-				System.out.println("Password must contain at least 1 upper case, 1 lower case and special characters counts should be between 1 to 4");
+				System.out.println("Password must contain at least "+minLetterAndDigitCount+
+						" upper case, "+minLetterAndDigitCount+" lower case "
+								+ "and special characters counts should be between "+minLetterAndDigitCount+
+								" to " + maxSpecialCharAllowed);
 			}
 			   
 			return flag;
 	    }else{
-	    	System.out.println("Password length must be at least 18 characters.");
+	    	System.out.println("Password length must be at least "+minPasswordLength+" characters.");
 	    	return false;
 	    }
 	}
 	
-	public static boolean checkDuplicateCharacterRule(String password){
+	private boolean checkDuplicateCharacterRule(String password){
 		boolean flag=false;
 		char[] chars = password.toLowerCase().toCharArray();        
         Map<Character, Integer> map = new HashMap<>();
@@ -84,14 +150,14 @@ public class ChangePassword {
         }
         
         for(char c : map.keySet()) {
-            if(map.get(c) > 4) {
+            if(map.get(c) > maxDuplicateChar) {
                 flag=true;
             }
         }
         return flag;
 	}
 	
-	public static int checkSimilarityFactor(String oldPassword, String newPassword)  
+	private int checkSimilarityFactor(String oldPassword, String newPassword)  
     { 
 		char[] oldArr = oldPassword.toLowerCase().toCharArray();
 		char[] newArr = newPassword.toLowerCase().toCharArray();

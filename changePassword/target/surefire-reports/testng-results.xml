@@ -2,16 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="changePasswordTests.TestChangePassword" duration-ms="20" started-at="2019-07-12T06:42:36Z" finished-at="2019-07-12T06:42:36Z">
+  <suite name="Agoda Change Password Test Suite" duration-ms="85" started-at="2019-07-13T10:56:11Z" finished-at="2019-07-13T10:56:11Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="20" started-at="2019-07-12T06:42:36Z" finished-at="2019-07-12T06:42:36Z">
+    <test name="ChangePassword" duration-ms="85" started-at="2019-07-13T10:56:11Z" finished-at="2019-07-13T10:56:11Z">
       <class name="changePasswordTests.TestChangePassword">
-        <test-method status="PASS" signature="TC01CheckValidPassword()[pri:0, instance:changePasswordTests.TestChangePassword@35bbe5e8]" name="TC01CheckValidPassword" duration-ms="7" started-at="2019-07-12T12:12:36Z" finished-at="2019-07-12T12:12:36Z">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:changePasswordTests.TestChangePassword@1b40d5f0]" name="setupTest" is-config="true" duration-ms="30" started-at="2019-07-13T16:26:11Z" finished-at="2019-07-13T16:26:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="TC01CheckValidPassword()[pri:0, instance:changePasswordTests.TestChangePassword@1b40d5f0]" name="TC01CheckValidPassword" duration-ms="10" started-at="2019-07-13T16:26:11Z" finished-at="2019-07-13T16:26:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01CheckValidPassword -->
       </class> <!-- changePasswordTests.TestChangePassword -->
-    </test> <!-- Command line test -->
-  </suite> <!-- changePasswordTests.TestChangePassword -->
+    </test> <!-- ChangePassword -->
+  </suite> <!-- Agoda Change Password Test Suite -->
 </testng-results>

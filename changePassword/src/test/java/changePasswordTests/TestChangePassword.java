@@ -1,9 +1,13 @@
 package changePasswordTests;
-import org.testng.annotations.Test;
 
-public class TestChangePassword {
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import changePasswordCore.ChangePassword;
+
+public class TestChangePassword extends BaseTest{
 	@Test
     public void TC01CheckValidPassword() {
-        System.out.println("This is just the structure now.");
+		ChangePassword cp = new ChangePassword();
+		Assert.assertTrue(cp.changePassword("Abcd@123", "abcdefgghijklWW@#123"),"Password should have been changed successfully");
     }
 }
