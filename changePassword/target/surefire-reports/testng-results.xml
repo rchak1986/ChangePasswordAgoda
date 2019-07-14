@@ -2,143 +2,332 @@
 <testng-results skipped="0" failed="0" total="20" passed="20">
   <reporter-output>
     <line>
+      <![CDATA[Old Password Successfully verified.]]>
+    </line>
+    <line>
+      <![CDATA[Password changed successfully.]]>
+    </line>
+    <line>
       <![CDATA[Test Data used: AbxdjkwesdQ@!#2389]]>
+    </line>
+    <line>
+      <![CDATA[Old Password Successfully verified.]]>
+    </line>
+    <line>
+      <![CDATA[Password changed successfully.]]>
     </line>
     <line>
       <![CDATA[Test Data used: AbxdjkwesdQ#$&*213]]>
     </line>
     <line>
+      <![CDATA[Old Password Successfully verified.]]>
+    </line>
+    <line>
+      <![CDATA[Password changed successfully.]]>
+    </line>
+    <line>
       <![CDATA[Test Data used: AjkaewasjAkqz!#$12]]>
+    </line>
+    <line>
+      <![CDATA[Old Password Successfully verified.]]>
+    </line>
+    <line>
+      <![CDATA[Password changed successfully.]]>
     </line>
     <line>
       <![CDATA[Test Data used: aSEtmwasy!@#12345678]]>
     </line>
     <line>
+      <![CDATA[Old Password Successfully verified.]]>
+    </line>
+    <line>
+      <![CDATA[Password changed successfully.]]>
+    </line>
+    <line>
       <![CDATA[Test Data used: 123456789!@#$xbXexdeX]]>
+    </line>
+    <line>
+      <![CDATA[Old Password Successfully verified.]]>
+    </line>
+    <line>
+      <![CDATA[Password length must be at least 18 characters.]]>
     </line>
     <line>
       <![CDATA[Test Data used: Abxres@123]]>
     </line>
     <line>
+      <![CDATA[Old Password Successfully verified.]]>
+    </line>
+    <line>
+      <![CDATA[Password must contain at least 1 upper case, 1 lower case and special characters [!@#$&*] counts should be between 1 to 4]]>
+    </line>
+    <line>
       <![CDATA[Test Data used: Absdewet%^()<>1234]]>
+    </line>
+    <line>
+      <![CDATA[Old Password Successfully verified.]]>
+    </line>
+    <line>
+      <![CDATA[Password must contain at least 1 upper case, 1 lower case and special characters [!@#$&*] counts should be between 1 to 4]]>
     </line>
     <line>
       <![CDATA[Test Data used: ABCDEFGEWS@!#12341]]>
     </line>
     <line>
+      <![CDATA[Old Password Successfully verified.]]>
+    </line>
+    <line>
+      <![CDATA[Password must contain at least 1 upper case, 1 lower case and special characters [!@#$&*] counts should be between 1 to 4]]>
+    </line>
+    <line>
       <![CDATA[Test Data used: abcdefdswa@!#12341]]>
+    </line>
+    <line>
+      <![CDATA[Old Password Successfully verified.]]>
+    </line>
+    <line>
+      <![CDATA[Password must contain at least 1 upper case, 1 lower case and special characters [!@#$&*] counts should be between 1 to 4]]>
     </line>
     <line>
       <![CDATA[Test Data used: AbxdjkwesQ!#$&*213]]>
     </line>
     <line>
+      <![CDATA[Old Password Successfully verified.]]>
+    </line>
+    <line>
+      <![CDATA[Password must contain at least 1 upper case, 1 lower case and special characters [!@#$&*] counts should be between 1 to 4]]>
+    </line>
+    <line>
       <![CDATA[Test Data used: 1234567890@&$asert]]>
+    </line>
+    <line>
+      <![CDATA[Old Password Successfully verified.]]>
+    </line>
+    <line>
+      <![CDATA[Password should not contain duplicate repeat characters more than 4]]>
     </line>
     <line>
       <![CDATA[Test Data used: AjakAewAsjkqa!#$12]]>
     </line>
     <line>
+      <![CDATA[Old Password Successfully verified.]]>
+    </line>
+    <line>
+      <![CDATA[Password must contain at least 1 upper case, 1 lower case and special characters [!@#$&*] counts should be between 1 to 4]]>
+    </line>
+    <line>
       <![CDATA[Test Data used: AbcdEfgHIjkl!@#mno]]>
+    </line>
+    <line>
+      <![CDATA[Old Password Successfully verified.]]>
+    </line>
+    <line>
+      <![CDATA[Password must contain at least 1 upper case, 1 lower case and special characters [!@#$&*] counts should be between 1 to 4]]>
     </line>
     <line>
       <![CDATA[Test Data used: 123456789011!@#123]]>
     </line>
     <line>
+      <![CDATA[Old Password Successfully verified.]]>
+    </line>
+    <line>
+      <![CDATA[Password must contain at least 1 upper case, 1 lower case and special characters [!@#$&*] counts should be between 1 to 4]]>
+    </line>
+    <line>
       <![CDATA[Test Data used: AbcdEFGijklmnoPQR1]]>
+    </line>
+    <line>
+      <![CDATA[Old Password does not match.]]>
     </line>
     <line>
       <![CDATA[Test Data used: 123456789!@#$xbXexdeX]]>
     </line>
     <line>
+      <![CDATA[Sample Old Password setup:ABCDefgh@#$1234567]]>
+    </line>
+    <line>
+      <![CDATA[Old Password Successfully verified.]]>
+    </line>
+    <line>
+      <![CDATA[Password changed successfully.]]>
+    </line>
+    <line>
       <![CDATA[Test Data used: ABCDefgh&*!9876567]]>
+    </line>
+    <line>
+      <![CDATA[Sample Old Password setup:ABCDefgh@#$1234567]]>
+    </line>
+    <line>
+      <![CDATA[Old Password Successfully verified.]]>
+    </line>
+    <line>
+      <![CDATA[Similarity factor between old and new password is more than 0.8]]>
     </line>
     <line>
       <![CDATA[Test Data used: ABCDefgh@#$1234909]]>
     </line>
     <line>
-      <![CDATA[Test Data used: ABCDefgh@#$1234990]]>
+      <![CDATA[Sample Old Password setup:ABCDefgh@#$1234567]]>
+    </line>
+    <line>
+      <![CDATA[Old Password Successfully verified.]]>
+    </line>
+    <line>
+      <![CDATA[Similarity factor between old and new password is more than 0.8]]>
+    </line>
+    <line>
+      <![CDATA[Test Data used: ABCDefgh@#$1234560]]>
+    </line>
+    <line>
+      <![CDATA[Sample Old Password setup:ABCDefgh@#$1234567]]>
+    </line>
+    <line>
+      <![CDATA[New Password can not be Null]]>
     </line>
     <line>
       <![CDATA[Test Data used: Null]]>
     </line>
   </reporter-output>
-  <suite name="Agoda Change Password Test Suite" duration-ms="96" started-at="2019-07-14T09:01:39Z" finished-at="2019-07-14T09:01:39Z">
+  <suite name="Agoda Change Password Test Suite" duration-ms="65" started-at="2019-07-14T19:13:47Z" finished-at="2019-07-14T19:13:47Z">
     <groups>
     </groups>
-    <test name="ChangePassword" duration-ms="96" started-at="2019-07-14T09:01:39Z" finished-at="2019-07-14T09:01:39Z">
+    <test name="ChangePassword" duration-ms="65" started-at="2019-07-14T19:13:47Z" finished-at="2019-07-14T19:13:47Z">
       <class name="changePasswordTests.TestInvalidScenarios">
-        <test-method status="PASS" signature="TC06LessThanMinChar()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC06LessThanMinChar" duration-ms="1" started-at="2019-07-14T14:31:39Z" finished-at="2019-07-14T14:31:39Z">
+        <test-method status="PASS" signature="TC06LessThanMinChar()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC06LessThanMinChar" duration-ms="0" started-at="2019-07-15T00:43:47Z" finished-at="2019-07-15T00:43:47Z">
           <reporter-output>
+            <line>
+              <![CDATA[Old Password Successfully verified.]]>
+            </line>
+            <line>
+              <![CDATA[Password length must be at least 18 characters.]]>
+            </line>
             <line>
               <![CDATA[Test Data used: Abxres@123]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC06LessThanMinChar -->
-        <test-method status="PASS" signature="TC07SpecialCharOutOfAllowedRange()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC07SpecialCharOutOfAllowedRange" duration-ms="1" started-at="2019-07-14T14:31:39Z" finished-at="2019-07-14T14:31:39Z">
+        <test-method status="PASS" signature="TC07SpecialCharOutOfAllowedRange()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC07SpecialCharOutOfAllowedRange" duration-ms="1" started-at="2019-07-15T00:43:47Z" finished-at="2019-07-15T00:43:47Z">
           <reporter-output>
+            <line>
+              <![CDATA[Old Password Successfully verified.]]>
+            </line>
+            <line>
+              <![CDATA[Password must contain at least 1 upper case, 1 lower case and special characters [!@#$&*] counts should be between 1 to 4]]>
+            </line>
             <line>
               <![CDATA[Test Data used: Absdewet%^()<>1234]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC07SpecialCharOutOfAllowedRange -->
-        <test-method status="PASS" signature="TC08AllCaptialLetters()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC08AllCaptialLetters" duration-ms="1" started-at="2019-07-14T14:31:39Z" finished-at="2019-07-14T14:31:39Z">
+        <test-method status="PASS" signature="TC08AllCaptialLetters()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC08AllCaptialLetters" duration-ms="1" started-at="2019-07-15T00:43:47Z" finished-at="2019-07-15T00:43:47Z">
           <reporter-output>
+            <line>
+              <![CDATA[Old Password Successfully verified.]]>
+            </line>
+            <line>
+              <![CDATA[Password must contain at least 1 upper case, 1 lower case and special characters [!@#$&*] counts should be between 1 to 4]]>
+            </line>
             <line>
               <![CDATA[Test Data used: ABCDEFGEWS@!#12341]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC08AllCaptialLetters -->
-        <test-method status="PASS" signature="TC09AllLowerCaseLetters()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC09AllLowerCaseLetters" duration-ms="0" started-at="2019-07-14T14:31:39Z" finished-at="2019-07-14T14:31:39Z">
+        <test-method status="PASS" signature="TC09AllLowerCaseLetters()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC09AllLowerCaseLetters" duration-ms="1" started-at="2019-07-15T00:43:47Z" finished-at="2019-07-15T00:43:47Z">
           <reporter-output>
+            <line>
+              <![CDATA[Old Password Successfully verified.]]>
+            </line>
+            <line>
+              <![CDATA[Password must contain at least 1 upper case, 1 lower case and special characters [!@#$&*] counts should be between 1 to 4]]>
+            </line>
             <line>
               <![CDATA[Test Data used: abcdefdswa@!#12341]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC09AllLowerCaseLetters -->
-        <test-method status="PASS" signature="TC10SpecialCharsBeyondMaxRange()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC10SpecialCharsBeyondMaxRange" duration-ms="3" started-at="2019-07-14T14:31:39Z" finished-at="2019-07-14T14:31:39Z">
+        <test-method status="PASS" signature="TC10SpecialCharsBeyondMaxRange()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC10SpecialCharsBeyondMaxRange" duration-ms="1" started-at="2019-07-15T00:43:47Z" finished-at="2019-07-15T00:43:47Z">
           <reporter-output>
+            <line>
+              <![CDATA[Old Password Successfully verified.]]>
+            </line>
+            <line>
+              <![CDATA[Password must contain at least 1 upper case, 1 lower case and special characters [!@#$&*] counts should be between 1 to 4]]>
+            </line>
             <line>
               <![CDATA[Test Data used: AbxdjkwesQ!#$&*213]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC10SpecialCharsBeyondMaxRange -->
-        <test-method status="PASS" signature="TC11DigitsBeyondMaxCount()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC11DigitsBeyondMaxCount" duration-ms="1" started-at="2019-07-14T14:31:39Z" finished-at="2019-07-14T14:31:39Z">
+        <test-method status="PASS" signature="TC11DigitsBeyondMaxCount()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC11DigitsBeyondMaxCount" duration-ms="3" started-at="2019-07-15T00:43:47Z" finished-at="2019-07-15T00:43:47Z">
           <reporter-output>
+            <line>
+              <![CDATA[Old Password Successfully verified.]]>
+            </line>
+            <line>
+              <![CDATA[Password must contain at least 1 upper case, 1 lower case and special characters [!@#$&*] counts should be between 1 to 4]]>
+            </line>
             <line>
               <![CDATA[Test Data used: 1234567890@&$asert]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC11DigitsBeyondMaxCount -->
-        <test-method status="PASS" signature="TC12DuplicatesBeyondMaxCount()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC12DuplicatesBeyondMaxCount" duration-ms="1" started-at="2019-07-14T14:31:39Z" finished-at="2019-07-14T14:31:39Z">
+        <test-method status="PASS" signature="TC12DuplicatesBeyondMaxCount()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC12DuplicatesBeyondMaxCount" duration-ms="1" started-at="2019-07-15T00:43:47Z" finished-at="2019-07-15T00:43:47Z">
           <reporter-output>
+            <line>
+              <![CDATA[Old Password Successfully verified.]]>
+            </line>
+            <line>
+              <![CDATA[Password should not contain duplicate repeat characters more than 4]]>
+            </line>
             <line>
               <![CDATA[Test Data used: AjakAewAsjkqa!#$12]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC12DuplicatesBeyondMaxCount -->
-        <test-method status="PASS" signature="TC13NoNumbers()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC13NoNumbers" duration-ms="1" started-at="2019-07-14T14:31:39Z" finished-at="2019-07-14T14:31:39Z">
+        <test-method status="PASS" signature="TC13NoNumbers()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC13NoNumbers" duration-ms="1" started-at="2019-07-15T00:43:47Z" finished-at="2019-07-15T00:43:47Z">
           <reporter-output>
+            <line>
+              <![CDATA[Old Password Successfully verified.]]>
+            </line>
+            <line>
+              <![CDATA[Password must contain at least 1 upper case, 1 lower case and special characters [!@#$&*] counts should be between 1 to 4]]>
+            </line>
             <line>
               <![CDATA[Test Data used: AbcdEfgHIjkl!@#mno]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC13NoNumbers -->
-        <test-method status="PASS" signature="TC14NoAlphabets()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC14NoAlphabets" duration-ms="0" started-at="2019-07-14T14:31:39Z" finished-at="2019-07-14T14:31:39Z">
+        <test-method status="PASS" signature="TC14NoAlphabets()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC14NoAlphabets" duration-ms="0" started-at="2019-07-15T00:43:47Z" finished-at="2019-07-15T00:43:47Z">
           <reporter-output>
+            <line>
+              <![CDATA[Old Password Successfully verified.]]>
+            </line>
+            <line>
+              <![CDATA[Password must contain at least 1 upper case, 1 lower case and special characters [!@#$&*] counts should be between 1 to 4]]>
+            </line>
             <line>
               <![CDATA[Test Data used: 123456789011!@#123]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC14NoAlphabets -->
-        <test-method status="PASS" signature="TC15NoSpecialCharacters()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC15NoSpecialCharacters" duration-ms="1" started-at="2019-07-14T14:31:39Z" finished-at="2019-07-14T14:31:39Z">
+        <test-method status="PASS" signature="TC15NoSpecialCharacters()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC15NoSpecialCharacters" duration-ms="0" started-at="2019-07-15T00:43:47Z" finished-at="2019-07-15T00:43:47Z">
           <reporter-output>
+            <line>
+              <![CDATA[Old Password Successfully verified.]]>
+            </line>
+            <line>
+              <![CDATA[Password must contain at least 1 upper case, 1 lower case and special characters [!@#$&*] counts should be between 1 to 4]]>
+            </line>
             <line>
               <![CDATA[Test Data used: AbcdEFGijklmnoPQR1]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC15NoSpecialCharacters -->
-        <test-method status="PASS" signature="TC16OldPasswordNotMatched()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC16OldPasswordNotMatched" duration-ms="1" started-at="2019-07-14T14:31:39Z" finished-at="2019-07-14T14:31:39Z">
+        <test-method status="PASS" signature="TC16OldPasswordNotMatched()[pri:0, instance:changePasswordTests.TestInvalidScenarios@3cb5cdba]" name="TC16OldPasswordNotMatched" duration-ms="0" started-at="2019-07-15T00:43:47Z" finished-at="2019-07-15T00:43:47Z">
           <reporter-output>
+            <line>
+              <![CDATA[Old Password does not match.]]>
+            </line>
             <line>
               <![CDATA[Test Data used: 123456789!@#$xbXexdeX]]>
             </line>
@@ -146,29 +335,62 @@
         </test-method> <!-- TC16OldPasswordNotMatched -->
       </class> <!-- changePasswordTests.TestInvalidScenarios -->
       <class name="changePasswordTests.TestPasswordSimilarity">
-        <test-method status="PASS" signature="TC17TestLessThan80PSimilarity()[pri:0, instance:changePasswordTests.TestPasswordSimilarity@5a39699c]" name="TC17TestLessThan80PSimilarity" duration-ms="2" started-at="2019-07-14T14:31:39Z" finished-at="2019-07-14T14:31:39Z">
+        <test-method status="PASS" signature="TC17TestLessThan80PSimilarity()[pri:0, instance:changePasswordTests.TestPasswordSimilarity@5a39699c]" name="TC17TestLessThan80PSimilarity" duration-ms="0" started-at="2019-07-15T00:43:47Z" finished-at="2019-07-15T00:43:47Z">
           <reporter-output>
+            <line>
+              <![CDATA[Sample Old Password setup:ABCDefgh@#$1234567]]>
+            </line>
+            <line>
+              <![CDATA[Old Password Successfully verified.]]>
+            </line>
+            <line>
+              <![CDATA[Password changed successfully.]]>
+            </line>
             <line>
               <![CDATA[Test Data used: ABCDefgh&*!9876567]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC17TestLessThan80PSimilarity -->
-        <test-method status="PASS" signature="TC18Test80PSimilarity()[pri:0, instance:changePasswordTests.TestPasswordSimilarity@5a39699c]" name="TC18Test80PSimilarity" duration-ms="2" started-at="2019-07-14T14:31:39Z" finished-at="2019-07-14T14:31:39Z">
+        <test-method status="PASS" signature="TC18Test80PSimilarity()[pri:0, instance:changePasswordTests.TestPasswordSimilarity@5a39699c]" name="TC18Test80PSimilarity" duration-ms="1" started-at="2019-07-15T00:43:47Z" finished-at="2019-07-15T00:43:47Z">
           <reporter-output>
+            <line>
+              <![CDATA[Sample Old Password setup:ABCDefgh@#$1234567]]>
+            </line>
+            <line>
+              <![CDATA[Old Password Successfully verified.]]>
+            </line>
+            <line>
+              <![CDATA[Similarity factor between old and new password is more than 0.8]]>
+            </line>
             <line>
               <![CDATA[Test Data used: ABCDefgh@#$1234909]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC18Test80PSimilarity -->
-        <test-method status="PASS" signature="TC19TestMoreThan80PSimilarity()[pri:0, instance:changePasswordTests.TestPasswordSimilarity@5a39699c]" name="TC19TestMoreThan80PSimilarity" duration-ms="1" started-at="2019-07-14T14:31:39Z" finished-at="2019-07-14T14:31:39Z">
+        <test-method status="PASS" signature="TC19TestMoreThan80PSimilarity()[pri:0, instance:changePasswordTests.TestPasswordSimilarity@5a39699c]" name="TC19TestMoreThan80PSimilarity" duration-ms="1" started-at="2019-07-15T00:43:47Z" finished-at="2019-07-15T00:43:47Z">
           <reporter-output>
             <line>
-              <![CDATA[Test Data used: ABCDefgh@#$1234990]]>
+              <![CDATA[Sample Old Password setup:ABCDefgh@#$1234567]]>
+            </line>
+            <line>
+              <![CDATA[Old Password Successfully verified.]]>
+            </line>
+            <line>
+              <![CDATA[Similarity factor between old and new password is more than 0.8]]>
+            </line>
+            <line>
+              <![CDATA[Test Data used: ABCDefgh@#$1234560]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC19TestMoreThan80PSimilarity -->
-        <test-method status="PASS" signature="TC20NewPasswordNull()[pri:0, instance:changePasswordTests.TestPasswordSimilarity@5a39699c]" name="TC20NewPasswordNull" duration-ms="1" started-at="2019-07-14T14:31:39Z" finished-at="2019-07-14T14:31:39Z">
+        <test-method status="PASS" signature="TC20NewPasswordNull()[pri:0, instance:changePasswordTests.TestPasswordSimilarity@5a39699c]" name="TC20NewPasswordNull" duration-ms="1" started-at="2019-07-15T00:43:47Z" finished-at="2019-07-15T00:43:47Z">
           <reporter-output>
+            <line>
+              <![CDATA[Sample Old Password setup:ABCDefgh@#$1234567]]>
+            </line>
+            <line>
+              <![CDATA[New Password can not be Null]]>
+            </line>
             <line>
               <![CDATA[Test Data used: Null]]>
             </line>
@@ -176,40 +398,70 @@
         </test-method> <!-- TC20NewPasswordNull -->
       </class> <!-- changePasswordTests.TestPasswordSimilarity -->
       <class name="changePasswordTests.TestValidScenarios">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:changePasswordTests.TestValidScenarios@5a01ccaa]" name="setupTest" is-config="true" duration-ms="31" started-at="2019-07-14T14:31:39Z" finished-at="2019-07-14T14:31:39Z">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:changePasswordTests.TestValidScenarios@5a01ccaa]" name="setupTest" is-config="true" duration-ms="25" started-at="2019-07-15T00:43:47Z" finished-at="2019-07-15T00:43:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="TC01CheckSpecialCharacterRange()[pri:0, instance:changePasswordTests.TestValidScenarios@5a01ccaa]" name="TC01CheckSpecialCharacterRange" duration-ms="5" started-at="2019-07-14T14:31:39Z" finished-at="2019-07-14T14:31:39Z">
+        <test-method status="PASS" signature="TC01CheckSpecialCharacterRange()[pri:0, instance:changePasswordTests.TestValidScenarios@5a01ccaa]" name="TC01CheckSpecialCharacterRange" duration-ms="5" started-at="2019-07-15T00:43:47Z" finished-at="2019-07-15T00:43:47Z">
           <reporter-output>
+            <line>
+              <![CDATA[Old Password Successfully verified.]]>
+            </line>
+            <line>
+              <![CDATA[Password changed successfully.]]>
+            </line>
             <line>
               <![CDATA[Test Data used: AbxdjkwesdQ@!#2389]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC01CheckSpecialCharacterRange -->
-        <test-method status="PASS" signature="TC02CheckSpecialCharacterCount()[pri:0, instance:changePasswordTests.TestValidScenarios@5a01ccaa]" name="TC02CheckSpecialCharacterCount" duration-ms="1" started-at="2019-07-14T14:31:39Z" finished-at="2019-07-14T14:31:39Z">
+        <test-method status="PASS" signature="TC02CheckSpecialCharacterCount()[pri:0, instance:changePasswordTests.TestValidScenarios@5a01ccaa]" name="TC02CheckSpecialCharacterCount" duration-ms="1" started-at="2019-07-15T00:43:47Z" finished-at="2019-07-15T00:43:47Z">
           <reporter-output>
+            <line>
+              <![CDATA[Old Password Successfully verified.]]>
+            </line>
+            <line>
+              <![CDATA[Password changed successfully.]]>
+            </line>
             <line>
               <![CDATA[Test Data used: AbxdjkwesdQ#$&*213]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC02CheckSpecialCharacterCount -->
-        <test-method status="PASS" signature="TC03DuplicateCharactersInRange()[pri:0, instance:changePasswordTests.TestValidScenarios@5a01ccaa]" name="TC03DuplicateCharactersInRange" duration-ms="1" started-at="2019-07-14T14:31:39Z" finished-at="2019-07-14T14:31:39Z">
+        <test-method status="PASS" signature="TC03DuplicateCharactersInRange()[pri:0, instance:changePasswordTests.TestValidScenarios@5a01ccaa]" name="TC03DuplicateCharactersInRange" duration-ms="0" started-at="2019-07-15T00:43:47Z" finished-at="2019-07-15T00:43:47Z">
           <reporter-output>
+            <line>
+              <![CDATA[Old Password Successfully verified.]]>
+            </line>
+            <line>
+              <![CDATA[Password changed successfully.]]>
+            </line>
             <line>
               <![CDATA[Test Data used: AjkaewasjAkqz!#$12]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC03DuplicateCharactersInRange -->
-        <test-method status="PASS" signature="TC04NumberOfDigitsInRange()[pri:0, instance:changePasswordTests.TestValidScenarios@5a01ccaa]" name="TC04NumberOfDigitsInRange" duration-ms="1" started-at="2019-07-14T14:31:39Z" finished-at="2019-07-14T14:31:39Z">
+        <test-method status="PASS" signature="TC04NumberOfDigitsInRange()[pri:0, instance:changePasswordTests.TestValidScenarios@5a01ccaa]" name="TC04NumberOfDigitsInRange" duration-ms="1" started-at="2019-07-15T00:43:47Z" finished-at="2019-07-15T00:43:47Z">
           <reporter-output>
+            <line>
+              <![CDATA[Old Password Successfully verified.]]>
+            </line>
+            <line>
+              <![CDATA[Password changed successfully.]]>
+            </line>
             <line>
               <![CDATA[Test Data used: aSEtmwasy!@#12345678]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC04NumberOfDigitsInRange -->
-        <test-method status="PASS" signature="TC05AllValidCriteria()[pri:0, instance:changePasswordTests.TestValidScenarios@5a01ccaa]" name="TC05AllValidCriteria" duration-ms="0" started-at="2019-07-14T14:31:39Z" finished-at="2019-07-14T14:31:39Z">
+        <test-method status="PASS" signature="TC05AllValidCriteria()[pri:0, instance:changePasswordTests.TestValidScenarios@5a01ccaa]" name="TC05AllValidCriteria" duration-ms="2" started-at="2019-07-15T00:43:47Z" finished-at="2019-07-15T00:43:47Z">
           <reporter-output>
+            <line>
+              <![CDATA[Old Password Successfully verified.]]>
+            </line>
+            <line>
+              <![CDATA[Password changed successfully.]]>
+            </line>
             <line>
               <![CDATA[Test Data used: 123456789!@#$xbXexdeX]]>
             </line>

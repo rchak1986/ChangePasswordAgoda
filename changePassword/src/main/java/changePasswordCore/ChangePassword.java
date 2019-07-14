@@ -12,6 +12,8 @@ import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.testng.Reporter;
+
 public class ChangePassword {
 	private String 	filePath 				= 	System.getProperty("user.dir")+"/src/main/resources/tempPass.properties";
 	private String 	defaultOldPassword 		= 	"Abcd@123";
@@ -24,6 +26,11 @@ public class ChangePassword {
 	private int 	maxDuplicateChar		= 	4;
 	private int 	minPasswordLength		= 	18;
 	
+	/**
+	 * Method to setup old system password.
+	 * <br>Mock function - writes user defined old password in properties file
+	 * @param oldPassword
+	 */
 	public void setOldPassword(String oldPassword){
 		File f = new File(filePath);
 		if (f.exists())f.delete();
@@ -40,8 +47,14 @@ public class ChangePassword {
 			e.printStackTrace();
 		}
 	}
-	
-	public boolean verifyOldPassword(String oldPassword){
+	/**
+	 * Method to verify user provided old password
+	 * <br>Mock Function - Verifies the old password from the properties file only.
+	 * <br><i>This method sets up default value [Abcd@123] as old password if no previous old password is present.</i>
+	 * @param oldPassword
+	 * @return Returns True if oldPassword matches with the system password.
+	 */
+	private boolean verifyOldPassword(String oldPassword){
 		boolean flag=false;
 		File f = new File(filePath);
 		if (!f.exists())setOldPassword(defaultOldPassword);
@@ -50,10 +63,10 @@ public class ChangePassword {
             prop.load(input);
 
             if (prop.getProperty(passwordKey).equals(oldPassword)){
-            	System.out.println("Old Password Successfully verified.");
+            	Reporter.log("Old Password Successfully verified.");
             	flag=true;
             }else{
-            	System.out.println("Old Password does not match.");
+            	Reporter.log("Old Password does not match.");
             }
 
         } catch (IOException ex) {
@@ -62,25 +75,38 @@ public class ChangePassword {
 
 		return flag;
 	}
-	
+	/**
+	 * Method to verify if the given new password can be accepted and changed.
+	 * @param oldPassword <br> the old password - to be validated against the properties file
+	 * @param newPassword <br> the new password to be changed to
+	 * @return Returns True if new password qualifies against all password setup rules
+	 */
 	public boolean changePassword(String oldPassword, String newPassword){
 		boolean flag=false;
 		double oldLength = oldPassword.length();
-		if (verifyOldPassword(oldPassword) && newPassword!=null){
-			if (checkPasswordRule(newPassword)){
-				double actualSimilarityFactor = checkSimilarityFactor(oldPassword,newPassword)/oldLength;
-				if (actualSimilarityFactor<similarityFactor){
-					System.out.println("Password changed successfully.");
-					flag=true;
-				}else{
-					System.out.println("Similarity factor between old and new password is more than " + similarityFactor);
+		if (newPassword !=null){
+			if (verifyOldPassword(oldPassword)){
+				if (checkPasswordRule(newPassword)){
+					double actualSimilarityFactor = checkSimilarityFactor(oldPassword,newPassword)/oldLength;
+					if (actualSimilarityFactor<similarityFactor){
+						Reporter.log("Password changed successfully.");
+						flag=true;
+					}else{
+						Reporter.log("Similarity factor between old and new password is more than " + similarityFactor);
+					}
 				}
 			}
+		}else{
+			Reporter.log("New Password can not be Null");
 		}
 				
 		return flag;
 	}
-
+	/**
+	 * Method to check if the given password qualifies the password setup rules
+	 * @param password
+	 * @return Returns true if it qualifies all the rules
+	 */
 	private boolean checkPasswordRule(String password) 
 	{
 		int newPasswordLength = password.length();
@@ -115,13 +141,13 @@ public class ChangePassword {
 					if (!checkDuplicateCharacterRule(password)){
 					   flag=true;
 					}else{
-						System.out.println("Password should not contain duplicate repeat characters more than " + maxDuplicateChar);
+						Reporter.log("Password should not contain duplicate repeat characters more than " + maxDuplicateChar);
 					}
 				}else{
-					System.out.println("50 % of the Password should not be a number.");
+					Reporter.log("50 % of the Password should not be a number.");
 				}
 			}else{
-				System.out.println("Password must contain at least "+minLetterAndDigitCount+
+				Reporter.log("Password must contain at least "+minLetterAndDigitCount+
 						" upper case, "+minLetterAndDigitCount+" lower case "
 								+ "and special characters ["
 								+specialCharRange+"] counts should be between "
@@ -130,11 +156,15 @@ public class ChangePassword {
 			   
 			return flag;
 	    }else{
-	    	System.out.println("Password length must be at least "+minPasswordLength+" characters.");
+	    	Reporter.log("Password length must be at least "+minPasswordLength+" characters.");
 	    	return false;
 	    }
 	}
-	
+	/**
+	 * Method to count & verify the number of duplicate characters in the given password.
+	 * @param password
+	 * @return Returns true if there is any duplicate character having occurrence more than the maximum allowed number.
+	 */
 	private boolean checkDuplicateCharacterRule(String password){
 		boolean flag=false;
 		char[] chars = password.toLowerCase().toCharArray();        
@@ -157,7 +187,13 @@ public class ChangePassword {
         }
         return flag;
 	}
-	
+	/**
+	 * Method to determine the similarity factor between two sets of passwords.
+	 * <br><i>This method finds out the maximum possible common substring between two strings</i>
+	 * @param oldPassword
+	 * @param newPassword
+	 * @return Returns the size of the maximum possible substring between two strings.
+	 */
 	private int checkSimilarityFactor(String oldPassword, String newPassword)  
     { 
 		char[] oldArr = oldPassword.toLowerCase().toCharArray();
