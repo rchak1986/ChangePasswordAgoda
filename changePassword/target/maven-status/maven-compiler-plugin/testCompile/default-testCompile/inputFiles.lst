@@ -1,2 +1,4 @@
 C:\Projects\Eclipse\HomeTest\ChangePasswordAgoda\changePassword\src\test\java\changePasswordTests\BaseTest.java
-C:\Projects\Eclipse\HomeTest\ChangePasswordAgoda\changePassword\src\test\java\changePasswordTests\TestChangePassword.java
+C:\Projects\Eclipse\HomeTest\ChangePasswordAgoda\changePassword\src\test\java\changePasswordTests\TestInvalidScenarios.java
+C:\Projects\Eclipse\HomeTest\ChangePasswordAgoda\changePassword\src\test\java\changePasswordTests\TestValidScenarios.java
+C:\Projects\Eclipse\HomeTest\ChangePasswordAgoda\changePassword\src\test\java\changePasswordTests\TestPasswordSimilarity.java

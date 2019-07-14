@@ -3,7 +3,9 @@
 <suite thread-count="1" verbose="1" name="Agoda Change Password Test Suite" annotations="JDK" parallel="tests">
   <test name="ChangePassword">
      <classes>
-       <class name="changePasswordTests.TestChangePassword"/>
+       <class name="changePasswordTests.TestValidScenarios"/>
+       <class name="changePasswordTests.TestInvalidScenarios"/>
+       <class name="changePasswordTests.TestPasswordSimilarity"/>
      </classes>
    </test>
 </suite>

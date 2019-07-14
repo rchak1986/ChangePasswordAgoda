@@ -13,16 +13,16 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ChangePassword {
-	private String filePath = System. getProperty("user.dir")+"/src/main/resources/tempPass.properties";
-	private String defaultOldPassword = "Abcd@123";
-	private String passwordKey="system.password";
-	private double similarityFactor = 0.8;
-	private String specialCharRange = "!@#$&*";
-	private double maxNumbersFactor=2;
-	private int maxSpecialCharAllowed = 4;
-	private int minLetterAndDigitCount = 1; //minimum 1 lower, 1 upper, 1 special and 1 digit
-	private int maxDuplicateChar=4;
-	private int minPasswordLength=18;
+	private String 	filePath 				= 	System.getProperty("user.dir")+"/src/main/resources/tempPass.properties";
+	private String 	defaultOldPassword 		= 	"Abcd@123";
+	private String 	passwordKey				= 	"system.password";
+	private double 	similarityFactor 		= 	0.8;
+	private String 	specialCharRange 		= 	"!@#$&*";
+	private double 	maxNumbersFactor		= 	2;
+	private int 	maxSpecialCharAllowed 	= 	4;
+	private int 	minLetterAndDigitCount	= 	1; //minimum 1 lower, 1 upper, 1 special and 1 digit
+	private int 	maxDuplicateChar		= 	4;
+	private int 	minPasswordLength		= 	18;
 	
 	public void setOldPassword(String oldPassword){
 		File f = new File(filePath);
@@ -66,7 +66,7 @@ public class ChangePassword {
 	public boolean changePassword(String oldPassword, String newPassword){
 		boolean flag=false;
 		double oldLength = oldPassword.length();
-		if (verifyOldPassword(oldPassword)){
+		if (verifyOldPassword(oldPassword) && newPassword!=null){
 			if (checkPasswordRule(newPassword)){
 				double actualSimilarityFactor = checkSimilarityFactor(oldPassword,newPassword)/oldLength;
 				if (actualSimilarityFactor<similarityFactor){
@@ -123,8 +123,9 @@ public class ChangePassword {
 			}else{
 				System.out.println("Password must contain at least "+minLetterAndDigitCount+
 						" upper case, "+minLetterAndDigitCount+" lower case "
-								+ "and special characters counts should be between "+minLetterAndDigitCount+
-								" to " + maxSpecialCharAllowed);
+								+ "and special characters ["
+								+specialCharRange+"] counts should be between "
+								+minLetterAndDigitCount+" to " + maxSpecialCharAllowed);
 			}
 			   
 			return flag;

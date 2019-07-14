@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="0.008" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="0.064" tests="20" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_131\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -64,5 +64,24 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="TC01CheckValidPassword" classname="changePasswordTests.TestChangePassword" time="0.008"/>
+  <testcase name="TC01CheckSpecialCharacterRange" classname="changePasswordTests.TestValidScenarios" time="0.009"/>
+  <testcase name="TC02CheckSpecialCharacterCount" classname="changePasswordTests.TestValidScenarios" time="0.007"/>
+  <testcase name="TC03DuplicateCharactersInRange" classname="changePasswordTests.TestValidScenarios" time="0.002"/>
+  <testcase name="TC04NumberOfDigitsInRange" classname="changePasswordTests.TestValidScenarios" time="0.001"/>
+  <testcase name="TC05AllValidCriteria" classname="changePasswordTests.TestValidScenarios" time="0"/>
+  <testcase name="TC06LessThanMinChar" classname="changePasswordTests.TestInvalidScenarios" time="0.001"/>
+  <testcase name="TC07SpecialCharOutOfAllowedRange" classname="changePasswordTests.TestInvalidScenarios" time="0.005"/>
+  <testcase name="TC08AllCaptialLetters" classname="changePasswordTests.TestInvalidScenarios" time="0.028"/>
+  <testcase name="TC09AllLowerCaseLetters" classname="changePasswordTests.TestInvalidScenarios" time="0.002"/>
+  <testcase name="TC10SpecialCharsBeyondMaxRange" classname="changePasswordTests.TestInvalidScenarios" time="0"/>
+  <testcase name="TC11DigitsBeyondMaxCount" classname="changePasswordTests.TestInvalidScenarios" time="0.001"/>
+  <testcase name="TC12DuplicatesBeyondMaxCount" classname="changePasswordTests.TestInvalidScenarios" time="0.001"/>
+  <testcase name="TC13NoNumbers" classname="changePasswordTests.TestInvalidScenarios" time="0.001"/>
+  <testcase name="TC14NoAlphabets" classname="changePasswordTests.TestInvalidScenarios" time="0.002"/>
+  <testcase name="TC15NoSpecialCharacters" classname="changePasswordTests.TestInvalidScenarios" time="0"/>
+  <testcase name="TC16OldPasswordNotMatched" classname="changePasswordTests.TestInvalidScenarios" time="0"/>
+  <testcase name="TC17TestLessThan80PSimilarity" classname="changePasswordTests.TestPasswordSimilarity" time="0.001"/>
+  <testcase name="TC18Test80PSimilarity" classname="changePasswordTests.TestPasswordSimilarity" time="0.001"/>
+  <testcase name="TC19TestMoreThan80PSimilarity" classname="changePasswordTests.TestPasswordSimilarity" time="0.001"/>
+  <testcase name="TC20NewPasswordNull" classname="changePasswordTests.TestPasswordSimilarity" time="0.001"/>
 </testsuite>

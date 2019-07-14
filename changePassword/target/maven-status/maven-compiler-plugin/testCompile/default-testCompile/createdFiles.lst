@@ -1,0 +1,4 @@
+changePasswordTests\TestPasswordSimilarity.class
+changePasswordTests\TestValidScenarios.class
+changePasswordTests\BaseTest.class
+changePasswordTests\TestInvalidScenarios.class

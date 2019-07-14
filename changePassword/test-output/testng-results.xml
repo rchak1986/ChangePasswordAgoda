@@ -1,21 +1,221 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="20" passed="20">
   <reporter-output>
+    <line>
+      <![CDATA[Test Data used: AbxdjkwesdQ@!#2389]]>
+    </line>
+    <line>
+      <![CDATA[Test Data used: AbxdjkwesdQ#$&*213]]>
+    </line>
+    <line>
+      <![CDATA[Test Data used: AjkaewasjAkqz!#$12]]>
+    </line>
+    <line>
+      <![CDATA[Test Data used: aSEtmwasy!@#12345678]]>
+    </line>
+    <line>
+      <![CDATA[Test Data used: 123456789!@#$xbXexdeX]]>
+    </line>
+    <line>
+      <![CDATA[Test Data used: Abxres@123]]>
+    </line>
+    <line>
+      <![CDATA[Test Data used: Absdewet%^()<>1234]]>
+    </line>
+    <line>
+      <![CDATA[Test Data used: ABCDEFGEWS@!#12341]]>
+    </line>
+    <line>
+      <![CDATA[Test Data used: abcdefdswa@!#12341]]>
+    </line>
+    <line>
+      <![CDATA[Test Data used: AbxdjkwesQ!#$&*213]]>
+    </line>
+    <line>
+      <![CDATA[Test Data used: 1234567890@&$asert]]>
+    </line>
+    <line>
+      <![CDATA[Test Data used: AjakAewAsjkqa!#$12]]>
+    </line>
+    <line>
+      <![CDATA[Test Data used: AbcdEfgHIjkl!@#mno]]>
+    </line>
+    <line>
+      <![CDATA[Test Data used: 123456789011!@#123]]>
+    </line>
+    <line>
+      <![CDATA[Test Data used: AbcdEFGijklmnoPQR1]]>
+    </line>
+    <line>
+      <![CDATA[Test Data used: 123456789!@#$xbXexdeX]]>
+    </line>
+    <line>
+      <![CDATA[Test Data used: ABCDefgh&*!9876567]]>
+    </line>
+    <line>
+      <![CDATA[Test Data used: ABCDefgh@#$1234909]]>
+    </line>
+    <line>
+      <![CDATA[Test Data used: ABCDefgh@#$1234990]]>
+    </line>
+    <line>
+      <![CDATA[Test Data used: Null]]>
+    </line>
   </reporter-output>
-  <suite name="Agoda Change Password Test Suite" duration-ms="58" started-at="2019-07-13T10:39:16Z" finished-at="2019-07-13T10:39:16Z">
+  <suite name="Agoda Change Password Test Suite" duration-ms="140" started-at="2019-07-14T08:33:38Z" finished-at="2019-07-14T08:33:38Z">
     <groups>
     </groups>
-    <test name="ChangePassword" duration-ms="58" started-at="2019-07-13T10:39:16Z" finished-at="2019-07-13T10:39:16Z">
-      <class name="changePasswordTests.TestChangePassword">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:changePasswordTests.TestChangePassword@7f560810]" name="setupTest" is-config="true" duration-ms="22" started-at="2019-07-13T16:09:16Z" finished-at="2019-07-13T16:09:16Z">
+    <test name="ChangePassword" duration-ms="140" started-at="2019-07-14T08:33:38Z" finished-at="2019-07-14T08:33:38Z">
+      <class name="changePasswordTests.TestInvalidScenarios">
+        <test-method status="PASS" signature="TC06LessThanMaxChar()[pri:0, instance:changePasswordTests.TestInvalidScenarios@1efbd816]" name="TC06LessThanMaxChar" duration-ms="4" started-at="2019-07-14T14:03:38Z" finished-at="2019-07-14T14:03:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data used: Abxres@123]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC06LessThanMaxChar -->
+        <test-method status="PASS" signature="TC07SpecialCharOutOfAllowedRange()[pri:0, instance:changePasswordTests.TestInvalidScenarios@1efbd816]" name="TC07SpecialCharOutOfAllowedRange" duration-ms="2" started-at="2019-07-14T14:03:38Z" finished-at="2019-07-14T14:03:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data used: Absdewet%^()<>1234]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC07SpecialCharOutOfAllowedRange -->
+        <test-method status="PASS" signature="TC08AllCaptialLetters()[pri:0, instance:changePasswordTests.TestInvalidScenarios@1efbd816]" name="TC08AllCaptialLetters" duration-ms="4" started-at="2019-07-14T14:03:38Z" finished-at="2019-07-14T14:03:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data used: ABCDEFGEWS@!#12341]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC08AllCaptialLetters -->
+        <test-method status="PASS" signature="TC09AllLowerCaseLetters()[pri:0, instance:changePasswordTests.TestInvalidScenarios@1efbd816]" name="TC09AllLowerCaseLetters" duration-ms="3" started-at="2019-07-14T14:03:38Z" finished-at="2019-07-14T14:03:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data used: abcdefdswa@!#12341]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC09AllLowerCaseLetters -->
+        <test-method status="PASS" signature="TC10SpecialCharsBeyondMaxRange()[pri:0, instance:changePasswordTests.TestInvalidScenarios@1efbd816]" name="TC10SpecialCharsBeyondMaxRange" duration-ms="2" started-at="2019-07-14T14:03:38Z" finished-at="2019-07-14T14:03:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data used: AbxdjkwesQ!#$&*213]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC10SpecialCharsBeyondMaxRange -->
+        <test-method status="PASS" signature="TC11DigitsBeyondMaxCount()[pri:0, instance:changePasswordTests.TestInvalidScenarios@1efbd816]" name="TC11DigitsBeyondMaxCount" duration-ms="0" started-at="2019-07-14T14:03:38Z" finished-at="2019-07-14T14:03:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data used: 1234567890@&$asert]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC11DigitsBeyondMaxCount -->
+        <test-method status="PASS" signature="TC12DuplicatesBeyondMaxCount()[pri:0, instance:changePasswordTests.TestInvalidScenarios@1efbd816]" name="TC12DuplicatesBeyondMaxCount" duration-ms="1" started-at="2019-07-14T14:03:38Z" finished-at="2019-07-14T14:03:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data used: AjakAewAsjkqa!#$12]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC12DuplicatesBeyondMaxCount -->
+        <test-method status="PASS" signature="TC13NoNumbers()[pri:0, instance:changePasswordTests.TestInvalidScenarios@1efbd816]" name="TC13NoNumbers" duration-ms="4" started-at="2019-07-14T14:03:38Z" finished-at="2019-07-14T14:03:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data used: AbcdEfgHIjkl!@#mno]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC13NoNumbers -->
+        <test-method status="PASS" signature="TC14NoAlphabets()[pri:0, instance:changePasswordTests.TestInvalidScenarios@1efbd816]" name="TC14NoAlphabets" duration-ms="4" started-at="2019-07-14T14:03:38Z" finished-at="2019-07-14T14:03:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data used: 123456789011!@#123]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC14NoAlphabets -->
+        <test-method status="PASS" signature="TC15NoSpecialCharacters()[pri:0, instance:changePasswordTests.TestInvalidScenarios@1efbd816]" name="TC15NoSpecialCharacters" duration-ms="1" started-at="2019-07-14T14:03:38Z" finished-at="2019-07-14T14:03:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data used: AbcdEFGijklmnoPQR1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC15NoSpecialCharacters -->
+        <test-method status="PASS" signature="TC16OldPasswordNotMatched()[pri:0, instance:changePasswordTests.TestInvalidScenarios@1efbd816]" name="TC16OldPasswordNotMatched" duration-ms="2" started-at="2019-07-14T14:03:38Z" finished-at="2019-07-14T14:03:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data used: 123456789!@#$xbXexdeX]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC16OldPasswordNotMatched -->
+      </class> <!-- changePasswordTests.TestInvalidScenarios -->
+      <class name="changePasswordTests.TestPasswordSimilarity">
+        <test-method status="PASS" signature="TC17TestLessThan80PSimilarity()[pri:0, instance:changePasswordTests.TestPasswordSimilarity@66d2e7d9]" name="TC17TestLessThan80PSimilarity" duration-ms="2" started-at="2019-07-14T14:03:38Z" finished-at="2019-07-14T14:03:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data used: ABCDefgh&*!9876567]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC17TestLessThan80PSimilarity -->
+        <test-method status="PASS" signature="TC18Test80PSimilarity()[pri:0, instance:changePasswordTests.TestPasswordSimilarity@66d2e7d9]" name="TC18Test80PSimilarity" duration-ms="2" started-at="2019-07-14T14:03:38Z" finished-at="2019-07-14T14:03:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data used: ABCDefgh@#$1234909]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC18Test80PSimilarity -->
+        <test-method status="PASS" signature="TC19TestMoreThan80PSimilarity()[pri:0, instance:changePasswordTests.TestPasswordSimilarity@66d2e7d9]" name="TC19TestMoreThan80PSimilarity" duration-ms="2" started-at="2019-07-14T14:03:38Z" finished-at="2019-07-14T14:03:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data used: ABCDefgh@#$1234990]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC19TestMoreThan80PSimilarity -->
+        <test-method status="PASS" signature="TC20NewPasswordNull()[pri:0, instance:changePasswordTests.TestPasswordSimilarity@66d2e7d9]" name="TC20NewPasswordNull" duration-ms="1" started-at="2019-07-14T14:03:38Z" finished-at="2019-07-14T14:03:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data used: Null]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC20NewPasswordNull -->
+      </class> <!-- changePasswordTests.TestPasswordSimilarity -->
+      <class name="changePasswordTests.TestValidScenarios">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:changePasswordTests.TestValidScenarios@7ca48474]" name="setupTest" is-config="true" duration-ms="22" started-at="2019-07-14T14:03:38Z" finished-at="2019-07-14T14:03:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="TC01CheckValidPassword()[pri:0, instance:changePasswordTests.TestChangePassword@7f560810]" name="TC01CheckValidPassword" duration-ms="15" started-at="2019-07-13T16:09:16Z" finished-at="2019-07-13T16:09:16Z">
+        <test-method status="PASS" signature="TC01CheckSpecialCharacterRange()[pri:0, instance:changePasswordTests.TestValidScenarios@7ca48474]" name="TC01CheckSpecialCharacterRange" duration-ms="13" started-at="2019-07-14T14:03:38Z" finished-at="2019-07-14T14:03:38Z">
           <reporter-output>
+            <line>
+              <![CDATA[Test Data used: AbxdjkwesdQ@!#2389]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- TC01CheckValidPassword -->
-      </class> <!-- changePasswordTests.TestChangePassword -->
+        </test-method> <!-- TC01CheckSpecialCharacterRange -->
+        <test-method status="PASS" signature="TC02CheckSpecialCharacterCount()[pri:0, instance:changePasswordTests.TestValidScenarios@7ca48474]" name="TC02CheckSpecialCharacterCount" duration-ms="1" started-at="2019-07-14T14:03:38Z" finished-at="2019-07-14T14:03:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data used: AbxdjkwesdQ#$&*213]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC02CheckSpecialCharacterCount -->
+        <test-method status="PASS" signature="TC03DuplicateCharactersInRange()[pri:0, instance:changePasswordTests.TestValidScenarios@7ca48474]" name="TC03DuplicateCharactersInRange" duration-ms="1" started-at="2019-07-14T14:03:38Z" finished-at="2019-07-14T14:03:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data used: AjkaewasjAkqz!#$12]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC03DuplicateCharactersInRange -->
+        <test-method status="PASS" signature="TC04NumberOfDigitsInRange()[pri:0, instance:changePasswordTests.TestValidScenarios@7ca48474]" name="TC04NumberOfDigitsInRange" duration-ms="7" started-at="2019-07-14T14:03:38Z" finished-at="2019-07-14T14:03:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data used: aSEtmwasy!@#12345678]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC04NumberOfDigitsInRange -->
+        <test-method status="PASS" signature="TC05AllValidCriteria()[pri:0, instance:changePasswordTests.TestValidScenarios@7ca48474]" name="TC05AllValidCriteria" duration-ms="5" started-at="2019-07-14T14:03:38Z" finished-at="2019-07-14T14:03:38Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data used: 123456789!@#$xbXexdeX]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC05AllValidCriteria -->
+      </class> <!-- changePasswordTests.TestValidScenarios -->
     </test> <!-- ChangePassword -->
   </suite> <!-- Agoda Change Password Test Suite -->
 </testng-results>
